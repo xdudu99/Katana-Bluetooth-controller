@@ -2,14 +2,23 @@
 A very simple script for using a bluetooth-midi (or usb) controller for changing channels on a Boss Katana MK2 using a Raspberry Pi
 
 
+
+
 Objective: create a simple program that runs at boot so i can control the amp without a cellphone connected to it.
 
 
+
+
 Disclaimer:
+
+
   This is my first ever code, i had 0 previous knowledge about programing or python or linux. This was my first contact with a rpi (wich i bought for this sole purpose). This code was made because i couldnt find anything like it while searching.
 
 
+
+
 Requirements:
+
 
   Boss Katana (it can work with mk1 and mk2, but since i have the 50 mk2, ive only searched mappings for mk2)
 
@@ -24,6 +33,10 @@ Requirements:
   A lot of patience and disposition to search for solutions to problems.
 
 
+
+
+
+
 Software requirements:
 
   A lightweight distro of linux for the pi (im using raspbian little) so it boots faster.
@@ -35,6 +48,10 @@ Software requirements:
   Read-only mode so you can unplug power without fear of corrupting something (https://learn.adafruit.com/read-only-raspberry-pi/)
 
   One of the many methods for executing the script at boot
+
+
+
+
 
 
 Simplified instalation (i will add a more detailed version later): 
@@ -52,11 +69,23 @@ Simplified instalation (i will add a more detailed version later):
   Set the script to run at boot
 
 
+
+
+
+
 Use:
   With the rpi off, connect the katana trough usb and turn on the controller. Turn on the rpi, wait a little so it initializes everything and you good to go.
 
 
+
+
+
+
 Permission: You can use this code for anything you want, edit it at your will. I only ask that if you improve it somehow, share it so i can improve it too and more people can get the benefits.
+
+
+
+
 
 
 Special thanks to snhirsch for creating a super useful program that extends the katana patch storage capabilities wich was proof that it was possible (check it out here https://github.com/snhirsch/katana-midi-bridge) and neuma studio (https://neuma.studio/rpi-as-midi-host.html) for a tutorial that also inspired me to make this.
