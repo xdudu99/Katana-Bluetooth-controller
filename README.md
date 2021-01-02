@@ -39,6 +39,8 @@ Requirements:
 
 Software requirements:
 
+  (optional) Midiberry on windows so you can easily see the output from the controller and use the values in the msg.control == xx: section (replace the xx with the value you see on midberry when you press a button on the controller).
+
   A lightweight distro of linux for the pi (im using raspbian little) so it boots faster.
  
   Bluez recompiled with midi enabled (use this guide https://tttapa.github.io/Pages/Ubuntu/Software-Installation/BlueZ.html)
