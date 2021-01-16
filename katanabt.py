@@ -112,11 +112,12 @@ while True:
 		
 	elif msg.control == 64 and msg.value == 127 and bank == 2:
 
-		if boostchkmsg.data[13] == 6:
+		if boostchkmsg.data[11] == 0:
 			multi.send(booston)
 			print ('Boost On')
 			continue
-		elif boostchkmsg.data[13] == 5:
+			
+		elif boostchkmsg.data[11] == 1:
 			multi.send(boostoff)
 			print ('Boost Off')
 			continue
@@ -128,40 +129,40 @@ while True:
 	
 	elif msg.control == 66 and msg.value == 127 and bank == 2:
 		
-		if delaychkmsg.data[13] == 27:
+		if delaychkmsg.data[11] == 0:
 			multi.send(delayon)
 			print ('Delay On')
 			continue
-		elif delaychkmsg.data[13] == 26:
+			
+		elif delaychkmsg.data[11] == 1:
 			multi.send(delayoff)
 			print ('Delay Off')
-			delayc = 0
 			continue
-	
 	
 	#Reverb
 	
 	elif msg.control == 65 and msg.value == 127 and bank == 2:
 	
-		if reverbchkmsg.data[13] == 87:
+		if reverbchkmsg.data[11] == 0:
 			multi.send(reverbon)
 			print ('Reverb On')
 			continue
-		elif reverbchkmsg.data[13] == 86:
+		
+		elif reverbchkmsg.data[11] == 1:
 			multi.send(reverboff)
 			print ('Reverb Off')
 			continue
-	
 	
 	#Mod
 
 	elif msg.control == 67 and msg.value == 127 and bank == 2:
 
-		if modchkmsg.data[13] == 123:
+		if modchkmsg.data[11] == 0:
 			multi.send(modon)
 			print ('Mod On')
 			continue
-		elif modchkmsg.data[13] == 122:
+
+		elif modchkmsg.data[11] == 1:
 			multi.send(modoff)
 			print ('Mod Off')
 			continue
@@ -171,11 +172,11 @@ while True:
 	
 	elif msg.control == 68 and msg.value == 127 and bank == 2:
 		
-		if fxchkmsg.data[13] == 8:
+		if fxchkmsg.data[11] == 0:
 			multi.send(fxon)
 			print ('Fx On')
 			continue
-		elif fxchkmsg.data[13] == 7:
+		elif fxchkmsg.data[11] == 1:
 			multi.send(fxoff)
 			print ('Fx Off')
 			continue
