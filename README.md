@@ -90,7 +90,7 @@ Permission: You can use this code for anything you want, edit it at your will. I
 
 
 
-Special thanks to snhirsch for creating a super useful program that extends the katana patch storage capabilities wich was proof that it was possible (check it out here https://github.com/snhirsch/katana-midi-bridge) and neuma studio (https://neuma.studio/rpi-as-midi-host.html) for a tutorial that also inspired me to make this.
+Special thanks to snhirsch for creating a super useful program that extends the katana patch storage capabilities wich was proof that it was possible (check it out here https://github.com/snhirsch/katana-midi-bridge) and neuma studio (https://neuma.studio/rpi-as-midi-host.html) for a tutorial that also inspired me to make this. A ENOURMOUS thank you to the vguitar forums for having most information i needed about sysex messages and hex mappings for pretty much anything you need about the katana (both mk1 and mk2).
 A big thank you for the linux/raspberry community for being super helpful with thousands of pre answered questions i had with this project.
 
 
